@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheckAuth</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <script src="/static/htmx.min.js"></script>
+</head>
+<body>
+<h1>CheckAuth</h1>
+<p>Добро пожаловать на платформу!</p>
+<div>
+    <h2>Тестовая ставка</h2>
+    <form hx-post="/bid" hx-target="#result">
+        <input type="number" name="amount" placeholder="Ваша ставка" required>
+        <button type="submit">Сделать ставку</button>
+    </form>
+    <div id="result"></div>
+</div>
+</body>
+</html>
